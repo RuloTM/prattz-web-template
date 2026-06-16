@@ -65,7 +65,7 @@ ${mensaje}`;
 
         <div className="flex justify-center gap-4">
          <a
-  href="https://wa.me/52124949232?text=Hola,%20me%20interesa%20una%20cotización"
+  href="https://wa.me/522292122255?text=Hola,%20me%20interesa%20una%20cotización"
   target="_blank"
   className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700"
 >
@@ -529,7 +529,7 @@ ${mensaje}`;
     </p>
 
     <a
-      href="https://wa.me/52124949232?text=Hola,%20me%20interesa%20una%20página%20web"
+      href="https://wa.me/522292122255?text=Hola,%20me%20interesa%20una%20página%20web"
       target="_blank"
       className="bg-green-500 text-white px-8 py-4 rounded-lg font-bold"
     >
@@ -552,7 +552,7 @@ ${mensaje}`;
     </p>
 
     <p className="mb-2">
-      WhatsApp: 249 492 3232
+      WhatsApp: 2292122255
     </p>
 
     <p className="text-gray-400 mt-6">
