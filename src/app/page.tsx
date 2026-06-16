@@ -8,7 +8,7 @@ const [empresa, setEmpresa] = useState("");
 const [mensaje, setMensaje] = useState("");
 
 const businessName = "Prattz Labs";
-const whatsappNumber = "525524949232";
+const whatsappNumber = "522292122255";
 const enviarWhatsApp = () => {
   const texto = ` Nueva solicitud de cotización
 
@@ -36,7 +36,7 @@ ${mensaje}`;
   </div>
 
   <a
-    href="https://wa.me/525524949232?text=Hola,%20me%20interesa%20una%20cotización"
+    href="https://wa.me/522292122255?text=Hola,%20me%20interesa%20una%20cotización"
     target="_blank"
     className="bg-black text-white px-5 py-2 rounded-lg"
   >
@@ -570,11 +570,11 @@ ${mensaje}`;
     </h3>
 
     <p className="text-gray-400">
-      Desarrollo de páginas web para negocios locales.
+      Desarrollo de páginas web para negocios en todo México.
     </p>
 
     <p className="mt-4">
-      WhatsApp: +52 55 2494 9232
+      WhatsApp: +52 2292122255
     </p>
   </div>
-</footer>
+</footer>   
