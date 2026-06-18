@@ -16,24 +16,27 @@ const [tipoDemo, setTipoDemo] = useState("tienda");
 const [carrito, setCarrito] = useState<any[]>([]);
 
 const productosDemo = [
-  {
-    id: 1,
-    nombre: "Funda iPhone 14",
-    precio: 299,
-    imagen: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb",
-  },
-  {
-    id: 2,
-    nombre: "Audífonos Bluetooth",
-    precio: 799,
-    imagen: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
-  },
-  {
-    id: 3,
-    nombre: "Smartwatch Deportivo",
-    precio: 1299,
-    imagen: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
-  },
+ {
+  id: 1,
+  nombre: "Funda iPhone 14",
+  precio: 299,
+  descripcion: "Protección resistente para tu smartphone.",
+  imagen: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb",
+},
+{
+  id: 2,
+  nombre: "Audífonos Bluetooth",
+  precio: 799,
+  descripcion: "Conexión inalámbrica y sonido premium.",
+  imagen: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+},
+{
+  id: 3,
+  nombre: "Smartwatch Deportivo",
+  precio: 1299,
+  descripcion: "Monitorea actividad física y salud.",
+  imagen: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+},
 ];
 const serviciosDemo = [
   {
