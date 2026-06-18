@@ -6,9 +6,136 @@ export default function Home() {
 const [telefono, setTelefono] = useState("");
 const [empresa, setEmpresa] = useState("");
 const [mensaje, setMensaje] = useState("");
+const [mensajeAgregado, setMensajeAgregado] = useState("");
+const [mensajeExito, setMensajeExito] = useState("");
+const [clienteNombre, setClienteNombre] = useState("");
+const [clienteTelefono, setClienteTelefono] = useState("");
+const [clienteCiudad, setClienteCiudad] = useState("");
+const [tipoDemo, setTipoDemo] = useState("tienda");
 
+const [carrito, setCarrito] = useState<any[]>([]);
+
+const productosDemo = [
+  {
+    id: 1,
+    nombre: "Funda iPhone 14",
+    precio: 299,
+    imagen: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb",
+  },
+  {
+    id: 2,
+    nombre: "Audífonos Bluetooth",
+    precio: 799,
+    imagen: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+  },
+  {
+    id: 3,
+    nombre: "Smartwatch Deportivo",
+    precio: 1299,
+    imagen: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+  },
+];
+const serviciosDemo = [
+  {
+    id: 101,
+    nombre: "Página Web Profesional",
+    precio: 4999,
+    descripcion: "Diseño moderno, dominio y formulario de contacto.",
+    imagen: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+  },
+  {
+    id: 102,
+    nombre: "Catálogo + WhatsApp",
+    precio: 7999,
+    descripcion: "Muestra productos y recibe pedidos directamente.",
+    imagen: "https://images.unsplash.com/photo-1556155092-490a1ba16284",
+  },
+  {
+    id: 103,
+    nombre: "Automatización con IA",
+    precio: 14999,
+    descripcion: "Automatiza respuestas y atención a clientes.",
+    imagen: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+  },
+];
+const productosActuales = tipoDemo === "tienda" ? productosDemo : serviciosDemo;
+const agregarAlCarrito = (producto: any) => {
+  const productoExiste = carrito.find((item) => item.id === producto.id);
+
+  if (productoExiste) {
+    setCarrito(
+      carrito.map((item) =>
+        item.id === producto.id
+          ? { ...item, cantidad: item.cantidad + 1 }
+          : item
+      )
+    );
+  } else {
+    setCarrito([...carrito, { ...producto, cantidad: 1 }]);
+  }
+
+  setMensajeAgregado(`✅ ${producto.nombre} agregado`);
+
+  setTimeout(() => {
+    setMensajeAgregado("");
+  }, 2000);
+};
+const totalCarrito = carrito.reduce(
+  (total, producto) => total + producto.precio * producto.cantidad,
+  0
+);
 const businessName = "Prattz Labs";
 const whatsappNumber = "522292122255";
+const enviarCarritoWhatsApp = () => {
+    if (!clienteNombre || !clienteTelefono || !clienteCiudad) {
+  alert("Por favor completa nombre, teléfono y ciudad antes de enviar el pedido.");
+  return;
+}
+  const mensaje = `
+Hola.
+
+Datos del cliente:
+
+Nombre: ${clienteNombre}
+Teléfono: ${clienteTelefono}
+Ciudad: ${clienteCiudad}
+
+Productos solicitados:
+
+${carrito
+  .map(
+    (producto) =>
+      `- ${producto.nombre} x${producto.cantidad} = $${producto.precio * producto.cantidad}`
+  )
+  .join("\n")}
+
+Total estimado: $${totalCarrito}
+`;
+
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    mensaje
+  )}`;
+
+  window.open(url, "_blank");
+
+setMensajeExito("✅ Pedido enviado correctamente");
+
+setCarrito([]);
+setClienteNombre("");
+setClienteTelefono("");
+setClienteCiudad("");
+
+setTimeout(() => {
+  setMensajeExito("");
+}, 3000);
+};
+
+const vaciarCarrito = () => {
+  setCarrito([]);
+};
+const eliminarProducto = (id: number) => {
+  setCarrito(carrito.filter((producto) => producto.id !== id));
+};
 const enviarWhatsApp = () => {
   const texto = ` Nueva solicitud de cotización
 
@@ -141,7 +268,7 @@ ${mensaje}`;
     </div>
   </div>
 </section>
-<section className="py-24 bg-gray-50">
+<section className="py-16 bg-gray-50">
   <div className="max-w-6xl mx-auto px-6">
 
     <h2 className="text-4xl font-bold text-center mb-14">
@@ -357,6 +484,226 @@ ${mensaje}`;
 
     </div>
 
+  </div>
+</section>
+<section className="py-20 bg-white">
+  <div className="max-w-6xl mx-auto px-6">
+    
+    <h2 className="text-4xl font-bold text-center mb-12">
+      ¿Qué podemos construir para tu negocio?
+    </h2>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div className="border rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+        <h3 className="text-2xl font-bold mb-3">🌐 Página Web Profesional</h3>
+        <p className="text-gray-600">
+          Sitios web modernos, rápidos y optimizados para generar confianza y conseguir clientes.
+        </p>
+      </div>
+
+      <div className="border rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+        <h3 className="text-2xl font-bold mb-3">💬 Catálogo + WhatsApp</h3>
+        <p className="text-gray-600">
+          Muestra tus productos y recibe pedidos directamente por WhatsApp.
+        </p>
+      </div>
+
+      <div className="border rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+        <h3 className="text-2xl font-bold mb-3">🤖 Automatización con IA</h3>
+        <p className="text-gray-600">
+          Automatiza respuestas, atención a clientes y procesos repetitivos.
+        </p>
+      </div>
+
+      <div className="border rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+        <h3 className="text-2xl font-bold mb-3">📅 Sistema de Citas</h3>
+        <p className="text-gray-600">
+          Agenda citas para médicos, dentistas, salones y otros negocios.
+        </p>
+      </div>
+
+      <div className="border rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+        <h3 className="text-2xl font-bold mb-3">🛒 Tienda en Línea</h3>
+        <p className="text-gray-600">
+          Catálogo, carrito de compras y gestión de pedidos para vender por internet.
+        </p>
+      </div>
+
+      <div className="border rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+        <h3 className="text-2xl font-bold mb-3">⚡ Soluciones a Medida</h3>
+        <p className="text-gray-600">
+          Sistemas personalizados para resolver necesidades específicas de tu empresa.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section className="py-24 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-6">
+    <h2 className="text-2xl font-semibold text-center text-green-600 mb-2">
+  🚀 Solución lista para vender por WhatsApp
+</h2>
+
+<h3 className="text-4xl font-bold text-center mb-4">
+  Catálogo Digital con Pedidos por WhatsApp
+</h3>
+<p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+  Tus clientes pueden ver productos, agregarlos al carrito y enviarte el pedido directamente por WhatsApp.
+</p>
+<div className="flex justify-center gap-4 mb-10">
+  <button
+    onClick={() => {
+      setTipoDemo("tienda");
+      setCarrito([]);
+    }}
+    className={`px-6 py-3 rounded-lg font-bold transition ${
+      tipoDemo === "tienda"
+        ? "bg-black text-white"
+        : "bg-white text-black border"
+    }`}
+  >
+    🛒 Tienda Online
+  </button>
+
+  <button
+    onClick={() => {
+      setTipoDemo("servicios");
+      setCarrito([]);
+    }}
+    className={`px-6 py-3 rounded-lg font-bold transition ${
+      tipoDemo === "servicios"
+        ? "bg-black text-white"
+        : "bg-white text-black border"
+    }`}
+  >
+    💼 Servicios Digitales
+  </button>
+</div>
+{mensajeAgregado && (
+  <div className="mb-6">
+    <div className="bg-green-100 text-green-800 px-4 py-3 rounded-lg font-medium">
+      {mensajeAgregado}
+    </div>
+  </div>
+)}
+{mensajeExito && (
+  <div className="mb-6">
+    <div className="bg-green-100 text-green-800 px-4 py-3 rounded-lg font-medium">
+      {mensajeExito}
+    </div>
+  </div>
+)}
+    <div className="grid md:grid-cols-3 gap-8">
+      {productosActuales.map((producto) => (
+        <div
+          key={producto.id}
+          className="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src={producto.imagen}
+            alt={producto.nombre}
+            className="w-full h-52 object-cover"
+          />
+
+          <div className="p-6">
+            <h3 className="text-2xl font-bold mb-2">
+  {producto.nombre}
+</h3>
+
+{producto.descripcion && (
+  <p className="text-gray-600 mb-3">
+    {producto.descripcion}
+  </p>
+)}
+<p className="text-green-600 font-bold text-xl mb-4">
+  ${producto.precio.toLocaleString("es-MX")} MXN
+</p>
+            <button
+              onClick={() => agregarAlCarrito(producto)}
+              className="bg-black text-white px-5 py-3 rounded-lg hover:bg-gray-800 transition"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div className="mt-12 bg-white rounded-2xl shadow p-6">
+      <h3 className="text-2xl font-bold mb-4">
+        🛒 Carrito ({carrito.reduce((total, producto) => total + producto.cantidad, 0)})
+      </h3>
+
+      {carrito.length === 0 ? (
+        <p className="text-gray-600">
+          Aún no hay productos agregados.
+        </p>
+      ) : (
+        <>
+          <ul className="space-y-2 mb-4">
+            {carrito.map((producto, index) => (
+              <li key={index} className="flex justify-between items-center border-b pb-2">
+  <span>{producto.nombre} x{producto.cantidad}</span>
+
+  <div className="flex items-center gap-4">
+    <span>${producto.precio * producto.cantidad}</span>
+
+    <button
+      onClick={() => eliminarProducto(producto.id)}
+      className="text-red-600 font-bold hover:text-red-800"
+    >
+      🗑️
+    </button>
+  </div>
+</li>
+            ))}
+          </ul>
+
+          <p className="font-bold text-xl mb-4">
+            Total: ${totalCarrito}
+          </p>
+          <div className="grid md:grid-cols-3 gap-4 mb-6">
+  <input
+    type="text"
+    placeholder="Nombre"
+    value={clienteNombre}
+    onChange={(e) => setClienteNombre(e.target.value)}
+    className="border rounded-lg p-3"
+  />
+
+  <input
+    type="text"
+    placeholder="Teléfono"
+    value={clienteTelefono}
+    onChange={(e) => setClienteTelefono(e.target.value)}
+    className="border rounded-lg p-3"
+  />
+
+  <input
+    type="text"
+    placeholder="Ciudad"
+    value={clienteCiudad}
+    onChange={(e) => setClienteCiudad(e.target.value)}
+    className="border rounded-lg p-3"
+  />
+</div>
+<button
+  onClick={enviarCarritoWhatsApp}
+  className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition"
+>
+  Enviar pedido por WhatsApp
+</button>
+<button
+  onClick={vaciarCarrito}
+  className="ml-4 bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition"
+>
+  Vaciar carrito
+</button>
+        </>
+      )}
+    </div>
   </div>
 </section>
 <section id="trabajos" className="py-20 bg-white">
