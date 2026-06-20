@@ -275,9 +275,11 @@ ${mensaje}`;
   <div className="max-w-6xl mx-auto px-6">
 
     <h2 className="text-4xl font-bold text-center mb-14">
-      Nuestro Proceso
+       ¿Cómo trabajamos?
     </h2>
-
+<p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+  Un proceso simple y transparente para lanzar tu proyecto rápidamente.
+</p>
     <div className="grid md:grid-cols-4 gap-8">
 
       <div className="bg-white p-8 rounded-2xl shadow-sm text-center">
@@ -326,84 +328,218 @@ ${mensaje}`;
 </section>
 <section className="bg-white py-24">
   <div className="max-w-6xl mx-auto px-6">
+<h2 className="text-5xl font-bold text-center mb-4">
+  Soluciones por Tipo de Negocio
+</h2>
+
+<p className="text-center text-gray-600 mb-14 text-lg">
+  Diseñamos páginas web adaptadas a las necesidades de cada empresa.
+</p>
+
+<div className="grid md:grid-cols-3 gap-8">
+  {/* Clínica Dental */}
+  <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+    <img
+      src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200"
+      alt="Clínica Dental"
+      className="w-full h-56 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-2xl font-bold mb-2">🏥 Clínica Dental</h3>
+      <p className="text-gray-600">
+        Agenda de citas, servicios, ubicación y contacto por WhatsApp.
+      </p>
+    </div>
+  </div>
+
+  {/* Agencia de Seguros */}
+  <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+    <img
+      src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+      alt="Seguros"
+      className="w-full h-56 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-2xl font-bold mb-2">🛡️ Agencia de Seguros</h3>
+      <p className="text-gray-600">
+        Cotizaciones rápidas, formularios y atención inmediata.
+      </p>
+    </div>
+  </div>
+
+  {/* Transporte */}
+  <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+    <img
+      src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+      alt="Transporte"
+      className="w-full h-56 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-2xl font-bold mb-2">🚛 Transporte</h3>
+      <p className="text-gray-600">
+        Muestra servicios, cobertura, unidades y contacto.
+      </p>
+    </div>
+  </div>
+
+  {/* Salón de Belleza */}
+  <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+    <img
+      src="https://images.unsplash.com/photo-1560066984-138dadb4c035"
+      alt="Salón de Belleza"
+      className="w-full h-56 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-2xl font-bold mb-2">💇 Salón de Belleza</h3>
+      <p className="text-gray-600">
+        Agenda citas, muestra servicios y recibe clientes por WhatsApp.
+      </p>
+    </div>
+  </div>
+
+  {/* Refaccionaria */}
+  <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+    <img
+      src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c"
+      alt="Refaccionaria"
+      className="w-full h-56 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-2xl font-bold mb-2">🔧 Refaccionaria</h3>
+      <p className="text-gray-600">
+        Catálogo de productos, promociones y pedidos por WhatsApp.
+      </p>
+    </div>
+  </div>
+
+  {/* Empresa */}
+  <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+    <img
+      src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+      alt="Empresa"
+      className="w-full h-56 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-2xl font-bold mb-2">🏢 Empresa</h3>
+      <p className="text-gray-600">
+        Presencia profesional para captar clientes y generar confianza.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div className="text-center mt-8">
+  <h3 className="text-3xl font-bold mb-4">
+    ¿Te gustaría una solución similar para tu negocio?
+  </h3>
+
+  <p className="text-gray-600 mb-6">
+    Cuéntanos tu idea y te ayudaremos a construir una solución a la medida.
+  </p>
+
+  <button
+    onClick={() =>
+      window.open(
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+          "Hola, me interesa una cotización para mi negocio."
+        )}`,
+        "_blank"
+      )
+    }
+    className="bg-green-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-700 transition"
+  >
+    Solicitar una Demo
+  </button>
+</div>
+
+</div>
+</section>
+<section className="py-24 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-6">
 
     <h2 className="text-5xl font-bold text-center mb-4">
-      Soluciones por Tipo de Negocio
+      ¿Por qué elegir Prattz Labs?
     </h2>
 
     <p className="text-center text-gray-600 mb-14 text-lg">
-      Diseñamos páginas web adaptadas a las necesidades de cada empresa.
+      Nos enfocamos en crear soluciones que ayuden a tu negocio a crecer.
     </p>
 
     <div className="grid md:grid-cols-3 gap-8">
 
-      <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
-        <img
-        src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200"
-  alt="Clínica Dental"
-  className="w-full h-56 object-cover"
-/>
-        <div className="p-6">
-          <h3 className="text-2xl font-bold mb-2">
-            🏥 Clínica Dental
-          </h3>
+      <div className="bg-white p-8 rounded-2xl shadow-sm border">
+        <div className="text-4xl mb-4">⚡</div>
 
-          <p className="text-gray-600">
-            Agenda de citas, servicios, ubicación y contacto por WhatsApp.
-          </p>
-        </div>
+        <h3 className="text-2xl font-bold mb-3">
+          Entrega Rápida
+        </h3>
+
+        <p className="text-gray-600">
+          Desarrollamos tu proyecto en días, no en meses.
+        </p>
       </div>
 
-      <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
-        <img
-          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
-          alt="Seguros"
-          className="w-full h-56 object-cover"
-        />
-        <div className="p-6">
-          <h3 className="text-2xl font-bold mb-2">
-            🛡️ Agencia de Seguros
-          </h3>
+      <div className="bg-white p-8 rounded-2xl shadow-sm border">
+        <div className="text-4xl mb-4">💬</div>
 
-          <p className="text-gray-600">
-            Cotizaciones rápidas, formularios y atención inmediata.
-          </p>
-        </div>
+        <h3 className="text-2xl font-bold mb-3">
+          Integración WhatsApp
+        </h3>
+
+        <p className="text-gray-600">
+          Facilita que tus clientes te contacten de inmediato.
+        </p>
       </div>
 
-      <div className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
-        <img
-          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
-          alt="Transporte"
-          className="w-full h-56 object-cover"
-        />
-        <div className="p-6">
-          <h3 className="text-2xl font-bold mb-2">
-            🚛 Transporte
-          </h3>
+      <div className="bg-white p-8 rounded-2xl shadow-sm border">
+        <div className="text-4xl mb-4">🚀</div>
 
-          <p className="text-gray-600">
-            Muestra servicios, cobertura, unidades y contacto.
-          </p>
-        </div>
+        <h3 className="text-2xl font-bold mb-3">
+          Pensado para Vender
+        </h3>
+
+        <p className="text-gray-600">
+          Diseñamos páginas enfocadas en generar prospectos y ventas.
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-2xl shadow-sm border">
+        <div className="text-4xl mb-4">📱</div>
+
+        <h3 className="text-2xl font-bold mb-3">
+          Adaptado a Celular
+        </h3>
+
+        <p className="text-gray-600">
+          La mayoría de tus clientes te visitarán desde su teléfono.
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-2xl shadow-sm border">
+        <div className="text-4xl mb-4">🤖</div>
+
+        <h3 className="text-2xl font-bold mb-3">
+          Automatización con IA
+        </h3>
+
+        <p className="text-gray-600">
+          Implementamos soluciones inteligentes para ahorrar tiempo.
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-2xl shadow-sm border">
+        <div className="text-4xl mb-4">🛠️</div>
+
+        <h3 className="text-2xl font-bold mb-3">
+          Soporte y Acompañamiento
+        </h3>
+
+        <p className="text-gray-600">
+          Te ayudamos antes, durante y después de la entrega.
+        </p>
       </div>
 
     </div>
-
-  </div>
-</section>
-<section id="servicios" className="bg-gray-50 py-20">
-  <div className="max-w-6xl mx-auto px-6">
-
-    <h2 className="text-4xl font-bold text-center mb-10">
-      Sobre Nosotros
-    </h2>
-
-    <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-      En Prattz Labs ayudamos a negocios locales a tener una presencia
-      profesional en internet mediante páginas web modernas, rápidas y
-      enfocadas en generar clientes.
-    </p>
 
   </div>
 </section>
@@ -416,77 +552,20 @@ ${mensaje}`;
       </h2>
 
       <p className="text-lg text-gray-600 mb-4">
-        Creamos sitios modernos, rápidos y optimizados para que tu negocio
-        destaque frente a la competencia.
+        Ayudamos a negocios locales a atraer más clientes mediante páginas web modernas, rápidas y enfocadas en resultados.
       </p>
 
       <p className="text-lg text-gray-600">
-        Integramos WhatsApp, formularios de contacto y herramientas para
-        ayudarte a vender más.
+        Integramos WhatsApp, formularios de contacto, catálogos digitales y automatizaciones para que tu negocio esté disponible las 24 horas.
       </p>
     </div>
-
-    <div className="bg-gray-200 rounded-2xl h-80 flex items-center justify-center">
-      <span className="text-gray-500 text-xl">
-        Imagen del negocio
-      </span>
-    </div>
-
-  </div>
-</section>
-<section id="servicios" className="bg-gray-50 py-20">
-  <div className="max-w-6xl mx-auto px-6">
-
-    <h2 className="text-4xl font-bold text-center mb-12">
-      Nuestros Servicios
-    </h2>
-
-    <div className="grid md:grid-cols-3 gap-8">
-
-      <div className="border rounded-xl p-6 bg-white">
-        <h3 className="text-2xl font-bold mb-3">🦷 Dentistas</h3>
-        <p className="text-gray-600">
-          Sitios web para captar pacientes y agendar citas.
-        </p>
-      </div>
-
-      <div className="border rounded-xl p-6 bg-white">
-        <h3 className="text-2xl font-bold mb-3">🛡️ Seguros</h3>
-        <p className="text-gray-600">
-          Cotizaciones rápidas y contacto inmediato por WhatsApp.
-        </p>
-      </div>
-
-      <div className="border rounded-xl p-6 bg-white">
-        <h3 className="text-2xl font-bold mb-3">🚛 Transportistas</h3>
-        <p className="text-gray-600">
-          Presenta tus servicios y recibe solicitudes de transporte.
-        </p>
-      </div>
-
-      <div className="border rounded-xl p-6 bg-white">
-        <h3 className="text-2xl font-bold mb-3">💇 Salones</h3>
-        <p className="text-gray-600">
-          Agenda citas y muestra tus servicios profesionales.
-        </p>
-      </div>
-
-      <div className="border rounded-xl p-6 bg-white">
-        <h3 className="text-2xl font-bold mb-3">🔧 Refaccionarias</h3>
-        <p className="text-gray-600">
-          Catálogo de productos y contacto inmediato.
-        </p>
-      </div>
-
-      <div className="border rounded-xl p-6 bg-white">
-        <h3 className="text-2xl font-bold mb-3">🏢 Empresas</h3>
-        <p className="text-gray-600">
-          Presencia profesional para cualquier negocio local.
-        </p>
-      </div>
-
-    </div>
-
+<div>
+  <img
+    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    alt="Desarrollador trabajando"
+    className="w-full h-80 object-cover rounded-2xl shadow-lg"
+  />
+</div>
   </div>
 </section>
 <section className="py-20 bg-white">
@@ -543,6 +622,185 @@ ${mensaje}`;
     </div>
   </div>
 </section>
+<section className="py-24 bg-white">
+  <div className="max-w-6xl mx-auto px-6">
+
+    <h2 className="text-5xl font-bold text-center mb-4">
+      ¿Qué puedes lograr con una página web profesional?
+    </h2>
+
+    <p className="text-center text-gray-600 mb-14 text-lg">
+      Tu sitio web trabaja para tu negocio las 24 horas del día.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      <div className="bg-white border rounded-2xl p-8 shadow-sm">
+        <div className="text-4xl mb-4">📈</div>
+        <h3 className="text-2xl font-bold mb-3">
+          Más Clientes
+        </h3>
+
+        <p className="text-gray-600">
+          Permite que nuevos clientes encuentren tu negocio en internet.
+        </p>
+      </div>
+
+      <div className="bg-white border rounded-2xl p-8 shadow-sm">
+        <div className="text-4xl mb-4">💬</div>
+        <h3 className="text-2xl font-bold mb-3">
+          Contacto Inmediato
+        </h3>
+
+        <p className="text-gray-600">
+          Recibe mensajes y solicitudes directamente por WhatsApp.
+        </p>
+      </div>
+
+      <div className="bg-white border rounded-2xl p-8 shadow-sm">
+        <div className="text-4xl mb-4">⭐</div>
+        <h3 className="text-2xl font-bold mb-3">
+          Mayor Confianza
+        </h3>
+
+        <p className="text-gray-600">
+          Una presencia profesional genera credibilidad frente a tus clientes.
+        </p>
+      </div>
+
+      <div className="bg-white border rounded-2xl p-8 shadow-sm">
+        <div className="text-4xl mb-4">⏰</div>
+        <h3 className="text-2xl font-bold mb-3">
+          Disponible 24/7
+        </h3>
+
+        <p className="text-gray-600">
+          Tu negocio sigue generando oportunidades incluso cuando estás ocupado.
+        </p>
+      </div>
+
+      <div className="bg-white border rounded-2xl p-8 shadow-sm">
+        <div className="text-4xl mb-4">🚀</div>
+        <h3 className="text-2xl font-bold mb-3">
+          Más Ventas
+        </h3>
+
+        <p className="text-gray-600">
+          Facilita que los clientes conozcan tus servicios y realicen pedidos.
+        </p>
+      </div>
+
+      <div className="bg-white border rounded-2xl p-8 shadow-sm">
+        <div className="text-4xl mb-4">🏆</div>
+        <h3 className="text-2xl font-bold mb-3">
+          Diferénciate
+        </h3>
+
+        <p className="text-gray-600">
+          Destaca frente a competidores que aún no tienen presencia digital.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section className="py-24 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-6">
+
+    <h2 className="text-5xl font-bold text-center mb-4">
+      Planes y Precios
+    </h2>
+
+    <p className="text-center text-gray-600 mb-14 text-lg">
+      Soluciones adaptadas al tamaño y necesidades de tu negocio.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {/* Básico */}
+      <div className="bg-white rounded-2xl shadow-sm p-8 border">
+        <h3 className="text-3xl font-bold mb-4">
+          🥉 Básico
+        </h3>
+
+        <p className="text-4xl font-bold text-green-600 mb-6">
+          Desde $4,999 MXN
+        </p>
+
+        <ul className="space-y-3 text-gray-600 mb-8">
+          <li>✅ Página web profesional</li>
+          <li>✅ Adaptada a celular</li>
+          <li>✅ Formulario de contacto</li>
+          <li>✅ Botón WhatsApp</li>
+          <li>✅ Publicación y puesta en marcha</li>
+        </ul>
+
+        <button className="w-full bg-black text-white py-3 rounded-xl">
+          Solicitar Cotización
+        </button>
+      </div>
+
+      {/* Profesional */}
+      <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-green-500">
+        <div className="text-center mb-3">
+          <span className="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-bold">
+            ⭐ Más solicitado
+          </span>
+        </div>
+
+        <h3 className="text-3xl font-bold mb-4">
+          🥈 Profesional
+        </h3>
+
+        <p className="text-4xl font-bold text-green-600 mb-6">
+          Desde $7,999 MXN
+        </p>
+
+        <ul className="space-y-3 text-gray-600 mb-8">
+          <li>✅ Todo lo anterior</li>
+          <li>✅ Catálogo digital</li>
+          <li>✅ Carrito de compras</li>
+          <li>✅ Pedidos por WhatsApp</li>
+          <li>✅ Configuración de dominio profesional</li>
+        </ul>
+
+        <button className="w-full bg-green-600 text-white py-3 rounded-xl">
+          Solicitar Cotización
+        </button>
+      </div>
+
+      {/* Premium */}
+      <div className="bg-white rounded-2xl shadow-sm p-8 border">
+        <h3 className="text-3xl font-bold mb-4">
+          🥇 Premium
+        </h3>
+
+        <p className="text-4xl font-bold text-green-600 mb-6">
+          Desde $14,999 MXN
+        </p>
+
+        <ul className="space-y-3 text-gray-600 mb-8">
+          <li>✅ Todo lo anterior</li>
+          <li>✅ Automatización con IA</li>
+          <li>✅ Captura automática de prospectos</li>
+          <li>✅ Respuestas inteligentes 24/7</li>
+          <li>✅ Ajustes y soporte prioritario</li>
+        </ul>
+
+        <button className="w-full bg-black text-white py-3 rounded-xl">
+          Solicitar Cotización
+        </button>
+      </div>
+
+    </div>
+
+    <p className="text-center text-gray-500 mt-10">
+      * Los precios son de referencia y pueden variar según las necesidades específicas de cada proyecto.
+    </p>
+
+  </div>
+</section>
 <section className="py-24 bg-gray-50">
   <div className="max-w-6xl mx-auto px-6">
     <h2 className="text-2xl font-semibold text-center text-green-600 mb-2">
@@ -552,9 +810,36 @@ ${mensaje}`;
 <h3 className="text-4xl font-bold text-center mb-4">
   Catálogo Digital con Pedidos por WhatsApp
 </h3>
+<p className="text-lg text-center text-gray-700 mb-6">
+  Páginas web, catálogos digitales y automatizaciones para hacer crecer tu negocio.
+</p>
 <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
   Tus clientes pueden ver productos, agregarlos al carrito y enviarte el pedido directamente por WhatsApp.
 </p>
+<div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12">
+  <div className="bg-white rounded-xl p-4 shadow-sm text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    ⚡ Entrega rápida
+  </div>
+
+  <div className="bg-white rounded-xl p-4 shadow-sm text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    📱 Adaptado a celular
+  </div>
+  <div className="bg-white rounded-xl p-4 shadow-sm text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    🌐 Dominio profesional
+  </div>
+
+  <div className="bg-white rounded-xl p-4 shadow-sm text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    💬 Integración WhatsApp
+  </div>
+
+  <div className="bg-white rounded-xl p-4 shadow-sm text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    🛠️ Soporte incluido
+  </div>
+
+  <div className="bg-white rounded-xl p-4 shadow-sm text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    🚀 Diseño moderno
+  </div>
+</div>
 <div className="flex justify-center gap-4 mb-10">
   <button
     onClick={() => {
