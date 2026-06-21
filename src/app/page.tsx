@@ -88,7 +88,7 @@ const totalCarrito = carrito.reduce(
   0
 );
 const businessName = "Prattz Labs";
-const whatsappNumber = "522292122255";
+const whatsappNumber = "525524949232";
 const enviarCarritoWhatsApp = () => {
     if (!clienteNombre || !clienteTelefono || !clienteCiudad) {
   alert("Por favor completa nombre, teléfono y ciudad antes de enviar el pedido.");
@@ -166,7 +166,7 @@ ${mensaje}`;
   </div>
 
   <a
-    href="https://wa.me/522292122255?text=Hola,%20me%20interesa%20una%20cotización"
+    href="https://wa.me/525524949232?text=Hola,%20me%20interesa%20una%20cotización"
     target="_blank"
     className="bg-black text-white px-5 py-2 rounded-lg"
   >
@@ -195,7 +195,7 @@ ${mensaje}`;
 
         <div className="flex justify-center gap-4">
          <a
-  href="https://wa.me/522292122255?text=Hola,%20me%20interesa%20una%20cotización"
+  href="https://wa.me/525524949232?text=Hola,%20me%20interesa%20una%20cotización"
   target="_blank"
   className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700"
 >
@@ -1164,7 +1164,7 @@ ${mensaje}`;
     </p>
 
     <a
-      href="https://wa.me/522292122255?text=Hola,%20me%20interesa%20una%20página%20web"
+      href="https://wa.me/525524949232?text=Hola,%20me%20interesa%20una%20página%20web"
       target="_blank"
       className="bg-green-500 text-white px-8 py-4 rounded-lg font-bold"
     >
@@ -1183,11 +1183,11 @@ ${mensaje}`;
     </p>
 
     <p className="mb-2">
-      Veracruz, México
+      Estado de México, México
     </p>
 
     <p className="mb-2">
-      WhatsApp: 2292122255
+      WhatsApp: 5524949232
     </p>
 
     <p className="text-gray-400 mt-6">
@@ -1206,17 +1206,66 @@ ${mensaje}`;
   );
 }
 <footer className="bg-black text-white py-12">
-  <div className="max-w-6xl mx-auto px-6 text-center">
-    <h3 className="text-2xl font-bold mb-4">
-      Prattz Labs
-    </h3>
+  <div className="max-w-6xl mx-auto px-6">
 
-    <p className="text-gray-400">
-      Desarrollo de páginas web para negocios en todo México.
-    </p>
+    <div className="grid md:grid-cols-3 gap-8">
 
-    <p className="mt-4">
-      WhatsApp: +52 2292122255
-    </p>
+      <div>
+        <h3 className="text-2xl font-bold mb-4">
+          Prattz Labs
+        </h3>
+
+        <p className="text-gray-400">
+          Desarrollo Web, Automatización con IA,
+          Chatbots para WhatsApp y Sistemas Empresariales.
+        </p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-3">
+          Contacto
+        </h4>
+
+        <p>contacto@prattzlabs.com</p>
+
+        <p className="mt-2">
+          +52 55 24 94 92 32
+        </p>
+
+        <p className="mt-2">
+          https://prattzlabs.com
+        </p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-3">
+          Legal
+        </h4>
+
+        <div className="flex flex-col gap-2">
+          <a href="/aviso-privacidad">
+            Aviso de Privacidad
+          </a>
+
+          <a href="/terminos-condiciones">
+            Términos y Condiciones
+          </a>
+
+          <a href="/eliminacion-datos">
+            Eliminación de Datos
+          </a>
+
+          <a href="/quienes-somos">
+            Quiénes Somos
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+      © 2026 Prattz Labs. Todos los derechos reservados.
+    </div>
+
   </div>
-</footer>   
+</footer> 
