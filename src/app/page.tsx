@@ -1172,6 +1172,41 @@ ${mensaje}`;
     </a>
   </div>
 </section>
+
+<footer className="bg-black text-white py-12">
+  <div className="max-w-6xl mx-auto px-6">
+    <div className="grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 className="text-2xl font-bold mb-4">Prattz Labs</h3>
+        <p className="text-gray-400">
+          Desarrollo Web, Automatización con IA, Chatbots para WhatsApp y Sistemas Empresariales.
+        </p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-3">Contacto</h4>
+        <p>contacto@prattzlabs.com</p>
+        <p className="mt-2">+52 55 24 94 92 32</p>
+        <p className="mt-2">https://prattzlabs.com</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-3">Legal</h4>
+        <div className="flex flex-col gap-2">
+          <a href="/aviso-privacidad">Aviso de Privacidad</a>
+          <a href="/terminos-condiciones">Términos y Condiciones</a>
+          <a href="/eliminacion-datos">Eliminación de Datos</a>
+          <a href="/quienes-somos">Quiénes Somos</a>
+        </div>
+      </div>
+    </div>
+
+    <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+      © 2026 Prattz Labs. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
+
 <a
   href={`https://wa.me/${whatsappNumber}?text=Hola,%20me%20interesa%20una%20cotización`}
   target="_blank"
@@ -1179,70 +1214,6 @@ ${mensaje}`;
 >
   💬 WhatsApp
 </a>
-    </main>
+</main>
   );
 }
-<footer className="bg-black text-white py-12">
-  <div className="max-w-6xl mx-auto px-6">
-
-    <div className="grid md:grid-cols-3 gap-8">
-
-      <div>
-        <h3 className="text-2xl font-bold mb-4">
-          Prattz Labs
-        </h3>
-
-        <p className="text-gray-400">
-          Desarrollo Web, Automatización con IA,
-          Chatbots para WhatsApp y Sistemas Empresariales.
-        </p>
-      </div>
-
-      <div>
-        <h4 className="font-semibold mb-3">
-          Contacto
-        </h4>
-
-        <p>contacto@prattzlabs.com</p>
-
-        <p className="mt-2">
-          +52 55 24 94 92 32
-        </p>
-
-        <p className="mt-2">
-          https://prattzlabs.com
-        </p>
-      </div>
-
-      <div>
-        <h4 className="font-semibold mb-3">
-          Legal
-        </h4>
-
-        <div className="flex flex-col gap-2">
-          <a href="/aviso-privacidad">
-            Aviso de Privacidad
-          </a>
-
-          <a href="/terminos-condiciones">
-            Términos y Condiciones
-          </a>
-
-          <a href="/eliminacion-datos">
-            Eliminación de Datos
-          </a>
-
-          <a href="/quienes-somos">
-            Quiénes Somos
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-      © 2026 Prattz Labs. Todos los derechos reservados.
-    </div>
-
-  </div>
-</footer> 
