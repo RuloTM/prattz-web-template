@@ -1172,29 +1172,6 @@ ${mensaje}`;
     </a>
   </div>
 </section>
-<footer className="bg-gray-900 text-white py-10">
-  <div className="max-w-6xl mx-auto px-6 text-center">
-    <h3 className="text-2xl font-bold mb-4">
-      Prattz Labs
-    </h3>
-
-    <p className="mb-2">
-      Desarrollo de páginas web para negocios locales.
-    </p>
-
-    <p className="mb-2">
-      Estado de México, México
-    </p>
-
-    <p className="mb-2">
-      WhatsApp: 5524949232
-    </p>
-
-    <p className="text-gray-400 mt-6">
-      © 2026 Prattz Labs. Todos los derechos reservados.
-    </p>
-  </div>
-</footer>
 <a
   href={`https://wa.me/${whatsappNumber}?text=Hola,%20me%20interesa%20una%20cotización`}
   target="_blank"
