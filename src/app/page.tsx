@@ -475,7 +475,7 @@ ${mensaje}`;
         </h3>
 
         <p className="text-gray-600">
-          Desarrollamos tu proyecto en días, no en meses.
+          Entregamos tu proyecto en pocos días para que empieces a generar clientes rápidamente.
         </p>
       </div>
 
