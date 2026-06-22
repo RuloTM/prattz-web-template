@@ -854,9 +854,11 @@ ${mensaje}`;
 <section id="trabajos" className="py-20 bg-white">
   <div className="max-w-6xl mx-auto px-6">
     <h2 className="text-4xl font-bold text-center mb-12">
-      Nuestros Trabajos
+      Ejemplos de Proyectos
     </h2>
-
+<p className="text-center text-gray-600 mb-10">
+  Algunos ejemplos de sitios web que podemos desarrollar para distintos tipos de negocios.
+</p>
     <div className="grid md:grid-cols-3 gap-8">
       <div className="border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
         <img
@@ -885,7 +887,7 @@ ${mensaje}`;
 />
         <div className="p-6">
           <h3 className="text-2xl font-bold mb-3">
-            Seguros Martínez
+            Seguros Proteción Total 
           </h3>
           <p className="text-gray-600 mb-4">
             Sitio web para generar cotizaciones rápidas de seguros.
@@ -904,7 +906,7 @@ ${mensaje}`;
 />
         <div className="p-6">
           <h3 className="text-2xl font-bold mb-3">
-            Transportes Veracruz
+            Transportes Martinez
           </h3>
           <p className="text-gray-600 mb-4">
             Página profesional para mostrar rutas, servicios y contacto.
