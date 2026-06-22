@@ -211,6 +211,7 @@ ${mensaje}`;
         </div>  
         </div>      
       </section>
+
       <section className="py-28 bg-gray-50">
   <div className="max-w-6xl mx-auto px-6">
     <h2 className="text-4xl font-bold text-center mb-12">
@@ -233,6 +234,79 @@ ${mensaje}`;
         <p>Carga rápida para mejorar la experiencia del usuario.</p>
       </div>
     </div>
+  </div>
+</section>
+<section className="py-20 bg-white">
+  <div className="max-w-6xl mx-auto px-6">
+
+    <h2 className="text-4xl font-bold text-center mb-6">
+      ¿Por qué Prattz Labs?
+    </h2>
+
+    <p className="text-xl text-center text-gray-600 max-w-4xl mx-auto mb-12">
+      Prattz Labs es una empresa mexicana especializada en desarrollo web,
+      automatización de procesos, inteligencia artificial y soluciones
+      empresariales para pequeñas y medianas empresas.
+    </p>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div className="border rounded-xl p-6">
+        <h3 className="font-bold text-xl mb-2">
+          🌐 Desarrollo Web
+        </h3>
+        <p>
+          Sitios web modernos enfocados en generar clientes y ventas.
+        </p>
+      </div>
+
+      <div className="border rounded-xl p-6">
+        <h3 className="font-bold text-xl mb-2">
+          🤖 Automatización con IA
+        </h3>
+        <p>
+          Implementamos procesos inteligentes para ahorrar tiempo y recursos.
+        </p>
+      </div>
+
+      <div className="border rounded-xl p-6">
+        <h3 className="font-bold text-xl mb-2">
+          💬 Chatbots para WhatsApp
+        </h3>
+        <p>
+          Atención automática para ventas, soporte y seguimiento.
+        </p>
+      </div>
+
+      <div className="border rounded-xl p-6">
+        <h3 className="font-bold text-xl mb-2">
+          ⚙️ Sistemas Empresariales
+        </h3>
+        <p>
+          Soluciones personalizadas para optimizar operaciones.
+        </p>
+      </div>
+
+      <div className="border rounded-xl p-6">
+        <h3 className="font-bold text-xl mb-2">
+          📈 Integraciones
+        </h3>
+        <p>
+          Conectamos WhatsApp, CRM, formularios y herramientas digitales.
+        </p>
+      </div>
+
+      <div className="border rounded-xl p-6">
+        <h3 className="font-bold text-xl mb-2">
+          🚀 Transformación Digital
+        </h3>
+        <p>
+          Ayudamos a negocios a crecer mediante tecnología moderna.
+        </p>
+      </div>
+
+    </div>
+
   </div>
 </section>
       <section className="bg-white py-20">
@@ -1187,7 +1261,7 @@ ${mensaje}`;
         <h4 className="font-semibold mb-3">Contacto</h4>
         <p>contacto@prattzlabs.com</p>
         <p className="mt-2">+52 55 24 94 92 32</p>
-        <p className="mt-2">https://prattzlabs.com</p>
+        <p className="mt-2">https://www.prattzlabs.com</p>
       </div>
 
       <div>
