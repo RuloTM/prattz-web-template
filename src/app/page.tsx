@@ -161,7 +161,7 @@ ${mensaje}`;
   <div className="hidden md:flex gap-8 font-medium">
     <a href="#inicio" className="hover:text-green-600">Inicio</a>
     <a href="#servicios" className="hover:text-green-600">Servicios</a>
-    <a href="#trabajos" className="hover:text-green-600">Portafolio</a>
+    <a href="#trabajos" className="hover:text-green-600">Proyectos</a>
     <a href="#contacto" className="hover:text-green-600">Contacto</a>
   </div>
 
@@ -887,7 +887,7 @@ ${mensaje}`;
 />
         <div className="p-6">
           <h3 className="text-2xl font-bold mb-3">
-            Seguros Proteción Total 
+            Seguros Protección Total 
           </h3>
           <p className="text-gray-600 mb-4">
             Sitio web para generar cotizaciones rápidas de seguros.
@@ -906,7 +906,7 @@ ${mensaje}`;
 />
         <div className="p-6">
           <h3 className="text-2xl font-bold mb-3">
-            Transportes Martinez
+            Transportes Martínez
           </h3>
           <p className="text-gray-600 mb-4">
             Página profesional para mostrar rutas, servicios y contacto.
