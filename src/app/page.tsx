@@ -868,7 +868,7 @@ ${mensaje}`;
 />
         <div className="p-6">
           <h3 className="text-2xl font-bold mb-3">
-            Clínica Dental Sonrisa
+            Clínica Dental 
           </h3>
           <p className="text-gray-600 mb-4">
             Página web para captar pacientes y recibir citas por WhatsApp.
@@ -887,7 +887,7 @@ ${mensaje}`;
 />
         <div className="p-6">
           <h3 className="text-2xl font-bold mb-3">
-            Seguros Protección Total 
+            Agencia de Seguros
           </h3>
           <p className="text-gray-600 mb-4">
             Sitio web para generar cotizaciones rápidas de seguros.
@@ -906,7 +906,7 @@ ${mensaje}`;
 />
         <div className="p-6">
           <h3 className="text-2xl font-bold mb-3">
-            Transportes Martínez
+            Logística y Transporte
           </h3>
           <p className="text-gray-600 mb-4">
             Página profesional para mostrar rutas, servicios y contacto.
