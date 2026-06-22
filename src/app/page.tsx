@@ -912,7 +912,7 @@ ${mensaje}`;
             Página profesional para mostrar rutas, servicios y contacto.
           </p>
           <button className="font-semibold text-green-600">
-            Ver proyecto →
+            Ejemplo de proyecto →
           </button>
         </div>
       </div>
