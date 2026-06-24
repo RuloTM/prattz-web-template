@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 export default function Home() {
     const [nombre, setNombre] = useState("");
 const [telefono, setTelefono] = useState("");
@@ -185,7 +186,7 @@ ${mensaje}`;
 
   <div className="relative z-10 max-w-6xl mx-auto px-6">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Consigue más clientes con una página web profesional
+          Consigue más clientes con una página web, catálogo digital y automatización por WhatsApp
         </h1>
 
         <p className="text-xl text-white max-w-3xl mx-auto mb-10">
@@ -615,11 +616,11 @@ ${mensaje}`;
         </p>
 
         <ul className="space-y-3 text-gray-600 mb-8">
-          <li>✅ Todo lo anterior</li>
+          <li>✅ Página web profesional</li>
           <li>✅ Catálogo digital</li>
           <li>✅ Carrito de compras</li>
           <li>✅ Pedidos por WhatsApp</li>
-          <li>✅ Configuración de dominio profesional</li>
+          <li>✅ Dominio profesional</li>
         </ul>
 
         <button className="w-full bg-green-600 text-white py-3 rounded-xl">
@@ -874,7 +875,7 @@ ${mensaje}`;
             Página web para captar pacientes y recibir citas por WhatsApp.
           </p>
           <button className="font-semibold text-green-600">
-            Ver proyecto →
+            Ejemplo de proyecto →
           </button>
         </div>
       </div>
@@ -893,7 +894,7 @@ ${mensaje}`;
             Sitio web para generar cotizaciones rápidas de seguros.
           </p>
           <button className="font-semibold text-green-600">
-            Ver proyecto →
+            Ejemplo de proyecto →
           </button>
         </div>
       </div>
@@ -972,9 +973,14 @@ ${mensaje}`;
     </h2>
 
     <p className="text-xl mb-8">
-      Solicita una cotización gratuita y descubre cómo una página web profesional puede ayudar a crecer tu negocio.
+      Atrae más clientes, genera confianza y vende más con una página web profesional diseñada para tu negocio.
     </p>
-
+      
+<div className="flex flex-col items-center gap-2 mb-8 text-green-400 font-medium">
+  <p>✓ Cotización gratuita</p>
+  <p>✓ Sin compromiso</p>
+  <p>✓ Entrega rápida</p>
+</div>
     <a
       href="https://wa.me/525524949232?text=Hola,%20me%20interesa%20una%20página%20web"
       target="_blank"
@@ -997,9 +1003,25 @@ ${mensaje}`;
 
       <div>
         <h4 className="font-semibold mb-3">Contacto</h4>
-        <p>contacto@prattzlabs.com</p>
-        <p className="mt-2">+52 55 24 94 92 32</p>
-        <p className="mt-2">https://www.prattzlabs.com</p>
+        <a
+  href="mailto:contacto@prattzlabs.com"
+  className="block hover:text-green-500 transition"
+>
+  📧 contacto@prattzlabs.com
+</a>
+        <a
+  href="tel:+525524949232"
+  className="block mt-2 hover:text-green-500 transition"
+>
+  📱 +52 55 24 94 92 32
+</a>
+        <a
+  href="https://www.prattzlabs.com"
+  target="_blank"
+  className="block mt-2 hover:text-green-500 transition"
+>
+  🌐 www.prattzlabs.com
+</a>
       </div>
 
       <div>
@@ -1014,17 +1036,17 @@ ${mensaje}`;
     </div>
 
     <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-      © 2026 Prattz Labs. Todos los derechos reservados.
+      © {new Date().getFullYear()} Prattz Labs. Todos los derechos reservados.
     </div>
   </div>
 </footer>
-
 <a
   href={`https://wa.me/${whatsappNumber}?text=Hola,%20me%20interesa%20una%20cotización`}
   target="_blank"
-  className="fixed bottom-6 right-6 bg-green-600 text-white px-5 py-4 rounded-full shadow-xl font-bold hover:bg-green-700 transition z-50"
+  rel="noopener noreferrer"
+  className="fixed bottom-5 right-5 w-16 h-16 bg-green-600 text-white rounded-full shadow-xl flex items-center justify-center text-4xl hover:bg-green-700 transition z-50"
 >
-  💬 WhatsApp
+  <FaWhatsapp />
 </a>
 </main>
   );
