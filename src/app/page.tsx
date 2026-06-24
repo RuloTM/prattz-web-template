@@ -975,7 +975,7 @@ ${mensaje}`;
     <p className="text-xl mb-8">
       Atrae más clientes, genera confianza y vende más con una página web profesional diseñada para tu negocio.
     </p>
-      
+
 <div className="flex flex-col items-center gap-2 mb-8 text-green-400 font-medium">
   <p>✓ Cotización gratuita</p>
   <p>✓ Sin compromiso</p>
@@ -1036,7 +1036,11 @@ ${mensaje}`;
     </div>
 
     <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-      © {new Date().getFullYear()} Prattz Labs. Todos los derechos reservados.
+      <p className="text-center text-gray-400 text-sm mt-8">
+  © {new Date().getFullYear()} Prattz Labs.
+  <br />
+  Todos los derechos reservados.
+</p>
     </div>
   </div>
 </footer>
